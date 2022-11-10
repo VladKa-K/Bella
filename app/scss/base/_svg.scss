@@ -1,0 +1,17 @@
+.icon-menu {
+    width: 20px;
+    height: 16px;
+}
+
+.icon-social {
+    @include animate(transform);
+
+    width: 41px;
+    height: 41px;
+    fill: $red;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

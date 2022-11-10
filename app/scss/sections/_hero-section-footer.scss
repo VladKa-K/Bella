@@ -1,0 +1,10 @@
+.hero-section-footer {
+    padding: 50px 0 22px;
+    background-image: linear-gradient(rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url("../images/hero-footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media('>=tablet') {
+        padding: 130px 0;
+    }
+}

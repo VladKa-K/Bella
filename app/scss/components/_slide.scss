@@ -1,0 +1,16 @@
+.slide {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -75px;
+        right: 0;
+        left: -50px;
+        margin: 0 auto;
+
+        @include media('>=tablet') {
+            top: -300px;
+            left: -130px;
+        }
+    }
+}

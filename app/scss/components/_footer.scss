@@ -1,0 +1,60 @@
+.footer {
+    padding: 25px 0 25px;
+    text-align: center;
+
+    @include media('>=laptop') {
+        padding: 35px 0 50px;
+    }
+
+    .container {
+        @include media('>=tablet') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        max-width: 206px;
+        margin: 0 auto 25px;
+
+        @include media('>=tablet') {
+            margin: 0;
+            padding: 27px 0;
+        }
+    }
+
+    &__social {
+        margin: 0 0 25px;
+
+        @include media('>=tablet') {
+            margin: 0;
+        }
+    }
+
+    &__copyright {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        color: #5c5c5c;
+    }
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin: 0 35px 0 0;
+
+            @include media('>=laptop') {
+                margin: 0 25px 0 0;
+            }
+        }
+    }
+}

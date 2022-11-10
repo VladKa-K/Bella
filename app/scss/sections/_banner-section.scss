@@ -1,0 +1,8 @@
+.banner-section {
+    min-height: 125vw;
+    position: relative;
+
+    @include media('>=tablet') {
+        min-height: 620px;
+    }
+}
